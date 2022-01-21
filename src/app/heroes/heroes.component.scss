@@ -1,4 +1,18 @@
-.heroes li.selected{
-  background-color: darkblue;
-  color: white;
+$backgroundColor: #0000af;
+
+.heroes {
+  cursor: pointer;
 }
+
+ul {
+  list-style: none;}
+  .heroes li.selected {
+    background-color: $backgroundColor;
+    border: firebrick;
+    border-radius: 40px 40px 40px 40px;
+    margin-right: 2px;
+    width: 150px;
+    color: white;
+    align-items: center;
+  }
+

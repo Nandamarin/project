@@ -1,4 +1,4 @@
-<h1>My Heroes</h1>
+<h1>Meu Clã</h1>
 
 <ul class="heroes">
   <li *ngFor="let hero of heroes" [class.selected]="hero === selectedHero" (click)="onSelect(hero)">
@@ -7,12 +7,12 @@
 </ul>
 
 <div *ngIf="selectedHero">
-  <h2>{{selectedHero.name | uppercase}} Details</h2>
+  <h2>{{selectedHero.name | uppercase}} Detalhes</h2>
   <div><span>id: </span>{{selectedHero.id}}</div>
-  <div><span>name: </span>{{selectedHero.name}}</div>
+  <div><span>Nome: </span>{{selectedHero.name}}</div>
 
   <div>
-    <label for="name">Hero name: </label>
+    <label for="name">Heroi: </label>
     <input id="name" [(ngModel)]="selectedHero.name" placeholder="name" type="text " />
   </div>
 </div>
